@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
 
 export const MainLayout = () => {
   return (
-    <div>
+    <Suspense fallback={<div>Page Loading....</div>}>
         <Outlet />
-    </div>
+    </Suspense>
   )
 }
+
+export default MainLayout

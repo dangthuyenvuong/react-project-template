@@ -1,6 +1,8 @@
-import { MainLayout } from "@/layouts/MainLayout";
-import { Home } from "@/pages";
-import { Page404 } from "@/pages/404";
+import { lazy } from "react";
+
+const Home = lazy(() => import("@/pages"))
+const Page404 = lazy(() => import("@/pages/404"))
+const MainLayout = lazy(() => import("@/layouts/MainLayout"))
 
 export const routers = [
     {

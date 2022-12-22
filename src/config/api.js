@@ -1,0 +1,1 @@
+export const AUTHENTICATION_API = import.meta.env.VITE_AUTHENTICATION_API
