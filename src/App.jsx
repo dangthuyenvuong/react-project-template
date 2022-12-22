@@ -1,6 +1,8 @@
 import { useRoutes } from "react-router-dom"
 import { routers } from "./routers"
 import { Suspense } from 'react'
+import '@/assets/css/tailwind.css'
+
 
 function App() {
   const element = useRoutes(routers)
