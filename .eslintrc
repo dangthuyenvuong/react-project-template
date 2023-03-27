@@ -1,0 +1,106 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:jest/recommended",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": ["react", "react-hooks"],
+  "globals": {
+    "ga": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
+  "rules": {
+    "react/jsx-no-bind": [
+      2,
+      {
+        "ignoreRefs": false,
+        "allowArrowFunctions": true,
+        "allowBind": false
+      }
+    ],
+    "strict": 0,
+    "quotes": [2, "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
+    "jsx-quotes": [2, "prefer-double"],
+    "max-depth": [2, 4],
+    "max-statements": [2, 30],
+    "complexity": [2, 15],
+    "new-cap": 2,
+    "template-curly-spacing" : "off",
+    "indent" : "off",
+    "no-bitwise": 2,
+    "radix": 2,
+    "max-nested-callbacks": [2, 4],
+    "no-nested-ternary": 1,
+    "keyword-spacing": [2, { "before": true }],
+    "space-before-blocks": [2, "always"],
+    "space-before-function-paren": [0, "always"],
+    "no-underscore-dangle": 0,
+    "no-trailing-spaces": 2,
+    "no-multiple-empty-lines": [2, { "max": 3, "maxEOF": 1 }],
+    "eol-last": 2,
+    "semi": [2, "always"],
+    "import/prefer-default-export": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "import/first": "off",
+    "eqeqeq": 2,
+    "class-methods-use-this": 2,
+    "react/prop-types": 0,
+    "react/no-unused-prop-types": 0,
+    "react/require-default-props": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/no-unused-state": 0,
+    "react/prefer-stateless-function": 2,
+    "react/display-name": 2,
+    "react/jsx-boolean-value": 2,
+    "react/no-did-mount-set-state": 2,
+    "react/no-did-update-set-state": 2,
+    "react/no-multi-comp": 0,
+    "react/self-closing-comp": 2,
+    "react/sort-comp": 2,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/jsx-no-duplicate-props": 2,
+    "react/jsx-no-undef": 2,
+    "react/jsx-closing-bracket-location": 2,
+    "react/jsx-closing-tag-location": 2,
+    "react/jsx-wrap-multilines": 0,
+    "react/no-deprecated": 2,
+    "react/no-direct-mutation-state": 2,
+    "react/no-find-dom-node": 0,
+    "react/no-is-mounted": 2,
+    "react/no-unknown-property": 2,
+    "react/react-in-jsx-scope": 0,
+    "react/require-render-return": 2,
+    "no-unused-vars": 2,
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src"],
+        "extensions": [".js", ".ts", ".tsx"]
+      }
+    },
+    "react": {
+      "version": "detect"
+    }
+  }
+}

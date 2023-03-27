@@ -1,0 +1,6 @@
+build/*
+public/*
+src/react-app-env.d.ts
+src/serviceWorker.js
+src/api-client/*
+docs/*
